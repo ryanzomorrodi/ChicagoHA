@@ -36,20 +36,20 @@ The most important column here is the `topic_key`. An individual
 
 topics <- ha_topics(progress = FALSE)
 topics
-#> # A tibble: 463 × 7
+#> # A tibble: 474 × 7
 #>    topic_name             topic_key topic_description topic_units topic_keywords
 #>    <chr>                  <chr>     <chr>             <chr>       <list>        
-#>  1 Active transportation… ACT       Percent of worke… "% of work… <chr [3]>     
-#>  2 Area Deprivation Index ADI       The ADI is a ran… ""          <chr [0]>     
-#>  3 Asthma (CDC Places)    AST       Percent of adult… "% of adul… <chr [0]>     
-#>  4 Expected annual build… BAL       Building loss qu… ""          <chr [6]>     
-#>  5 Have ever had cancer   CAN       Percent of resid… "% of adul… <chr [4]>     
-#>  6 Drive alone to work    CAR       Percent of worke… "% of work… <chr [0]>     
-#>  7 Invasive breast cance… CCB       Annual diagnosis… "per 100,0… <chr [4]>     
-#>  8 Cervical cancer diagn… CCC       Annual diagnosis… "per 100,0… <chr [5]>     
-#>  9 Oral cancer diagnosis… CCD       Annual diagnosis… "per 100,0… <chr [4]>     
-#> 10 Lung cancer diagnosis… CCG       Annual diagnosis… "per 100,0… <chr [5]>     
-#> # ℹ 453 more rows
+#>  1 9th grade education r… EDA       Residents 25 or … % of resid… <chr [2]>     
+#>  2 ACA marketplace enrol… ENR       Number of plan s… plan selec… <chr [5]>     
+#>  3 Accidents mortality    VRAC      Number of people… count of d… <chr [2]>     
+#>  4 Accidents mortality r… VRACR     Age-adjusted rat… per 100,00… <chr [2]>     
+#>  5 Active business licen… CHANVYI   Count of active … licenses p… <chr [1]>     
+#>  6 Active transportation… ACT       Percent of worke… % of worke… <chr [3]>     
+#>  7 Adult asthma           HCSATH    Number of adults… count of a… <chr [2]>     
+#>  8 Adult asthma rate      HCSATHP   Percent of adult… % of adults <chr [2]>     
+#>  9 Adult binge drinking   HCSBD     Number of adults… count of a… <chr [1]>     
+#> 10 Adult binge drinking … HCSBDP    Percent of adult… % of adults <chr [1]>     
+#> # ℹ 464 more rows
 #> # ℹ 2 more variables: topic_datasets <list>, topic_subcategories <list>
 ```
 
@@ -79,25 +79,25 @@ topics %>%
 #>    topic_name             topic_key topic_description topic_units topic_keywords
 #>    <chr>                  <chr>     <chr>             <chr>       <list>        
 #>  1 Adult fruit and veget… HCSFV     "Number of adult… count of a… <chr [2]>     
-#>  2 Easy access to fruits… HCSFVA    "Number of adult… count of a… <chr [2]>     
-#>  3 Easy access to fruits… HCSFVAP   "Percent of adul… % of adults <chr [2]>     
-#>  4 Adult fruit and veget… HCSFVP    "Percent of adul… % of adults <chr [2]>     
-#>  5 Adult physical inacti… HCSPA     "Number of adult… count of a… <chr [2]>     
-#>  6 Adult physical inacti… HCSPAP    "Percent of adul… % of adults <chr [2]>     
-#>  7 Adult soda consumption HCSS      "Number of adult… count of a… <chr [1]>     
-#>  8 Adult soda consumptio… HCSSP     "Percent of adul… % of adults <chr [1]>     
+#>  2 Adult fruit and veget… HCSFVP    "Percent of adul… % of adults <chr [2]>     
+#>  3 Adult physical inacti… HCSPA     "Number of adult… count of a… <chr [2]>     
+#>  4 Adult physical inacti… HCSPAP    "Percent of adul… % of adults <chr [2]>     
+#>  5 Adult soda consumption HCSS      "Number of adult… count of a… <chr [1]>     
+#>  6 Adult soda consumptio… HCSSP     "Percent of adul… % of adults <chr [1]>     
+#>  7 Easy access to fruits… HCSFVA    "Number of adult… count of a… <chr [2]>     
+#>  8 Easy access to fruits… HCSFVAP   "Percent of adul… % of adults <chr [2]>     
 #>  9 High School fruit and… YRFV      "Number of Chica… count of s… <chr [2]>     
 #> 10 High School fruit and… YRFVP     "Percent of Chic… % of stude… <chr [2]>     
-#> 11 Middle School physica… YRMPA     "Number of Chica… count of s… <chr [0]>     
-#> 12 Middle School physica… YRMPAP    "Percent of Chic… % of stude… <chr [0]>     
-#> 13 Middle School physica… YRMPI     "Number of Chica… count of s… <chr [3]>     
-#> 14 Middle School physica… YRMPIP    "Percent of Chic… % of stude… <chr [3]>     
-#> 15 High School physical … YRPA      "Number of Chica… count of s… <chr [0]>     
-#> 16 High School physical … YRPAP     "Percent of Chic… % of stude… <chr [0]>     
-#> 17 High School physical … YRPI      "Number of Chica… count of s… <chr [3]>     
-#> 18 High School physical … YRPIP     "Percent of Chic… % of stude… <chr [3]>     
-#> 19 High School soda cons… YRSO      "Number of Chica… count of s… <chr [1]>     
-#> 20 High School soda cons… YRSOP     "Percent of Chic… % of stude… <chr [1]>     
+#> 11 High School physical … YRPA      "Number of Chica… count of s… <chr [0]>     
+#> 12 High School physical … YRPAP     "Percent of Chic… % of stude… <chr [0]>     
+#> 13 High School physical … YRPI      "Number of Chica… count of s… <chr [3]>     
+#> 14 High School physical … YRPIP     "Percent of Chic… % of stude… <chr [3]>     
+#> 15 High School soda cons… YRSO      "Number of Chica… count of s… <chr [1]>     
+#> 16 High School soda cons… YRSOP     "Percent of Chic… % of stude… <chr [1]>     
+#> 17 Middle School physica… YRMPA     "Number of Chica… count of s… <chr [0]>     
+#> 18 Middle School physica… YRMPAP    "Percent of Chic… % of stude… <chr [0]>     
+#> 19 Middle School physica… YRMPI     "Number of Chica… count of s… <chr [3]>     
+#> 20 Middle School physica… YRMPIP    "Percent of Chic… % of stude… <chr [3]>     
 #> # ℹ 2 more variables: topic_datasets <list>, topic_subcategories <list>
 
 # filter by keyword
@@ -108,10 +108,10 @@ topics %>%
 #>   <chr>                   <chr>     <chr>             <chr>       <list>        
 #> 1 Adult physical inactiv… HCSPA     Number of adults… count of a… <chr [2]>     
 #> 2 Adult physical inactiv… HCSPAP    Percent of adult… % of adults <chr [2]>     
-#> 3 Middle School physical… YRMPI     Number of Chicag… count of s… <chr [3]>     
-#> 4 Middle School physical… YRMPIP    Percent of Chica… % of stude… <chr [3]>     
-#> 5 High School physical i… YRPI      Number of Chicag… count of s… <chr [3]>     
-#> 6 High School physical i… YRPIP     Percent of Chica… % of stude… <chr [3]>     
+#> 3 High School physical i… YRPI      Number of Chicag… count of s… <chr [3]>     
+#> 4 High School physical i… YRPIP     Percent of Chica… % of stude… <chr [3]>     
+#> 5 Middle School physical… YRMPI     Number of Chicag… count of s… <chr [3]>     
+#> 6 Middle School physical… YRMPIP    Percent of Chica… % of stude… <chr [3]>     
 #> # ℹ 2 more variables: topic_datasets <list>, topic_subcategories <list>
 ```
 
@@ -148,25 +148,25 @@ ha_topics("diet-exercise")
 #>    topic_name             topic_key topic_description topic_units topic_keywords
 #>    <chr>                  <chr>     <chr>             <chr>       <list>        
 #>  1 Adult fruit and veget… HCSFV     "Number of adult… count of a… <chr [2]>     
-#>  2 Easy access to fruits… HCSFVA    "Number of adult… count of a… <chr [2]>     
-#>  3 Easy access to fruits… HCSFVAP   "Percent of adul… % of adults <chr [2]>     
-#>  4 Adult fruit and veget… HCSFVP    "Percent of adul… % of adults <chr [2]>     
-#>  5 Adult physical inacti… HCSPA     "Number of adult… count of a… <chr [2]>     
-#>  6 Adult physical inacti… HCSPAP    "Percent of adul… % of adults <chr [2]>     
-#>  7 Adult soda consumption HCSS      "Number of adult… count of a… <chr [1]>     
-#>  8 Adult soda consumptio… HCSSP     "Percent of adul… % of adults <chr [1]>     
+#>  2 Adult fruit and veget… HCSFVP    "Percent of adul… % of adults <chr [2]>     
+#>  3 Adult physical inacti… HCSPA     "Number of adult… count of a… <chr [2]>     
+#>  4 Adult physical inacti… HCSPAP    "Percent of adul… % of adults <chr [2]>     
+#>  5 Adult soda consumption HCSS      "Number of adult… count of a… <chr [1]>     
+#>  6 Adult soda consumptio… HCSSP     "Percent of adul… % of adults <chr [1]>     
+#>  7 Easy access to fruits… HCSFVA    "Number of adult… count of a… <chr [2]>     
+#>  8 Easy access to fruits… HCSFVAP   "Percent of adul… % of adults <chr [2]>     
 #>  9 High School fruit and… YRFV      "Number of Chica… count of s… <chr [2]>     
 #> 10 High School fruit and… YRFVP     "Percent of Chic… % of stude… <chr [2]>     
-#> 11 Middle School physica… YRMPA     "Number of Chica… count of s… <chr [0]>     
-#> 12 Middle School physica… YRMPAP    "Percent of Chic… % of stude… <chr [0]>     
-#> 13 Middle School physica… YRMPI     "Number of Chica… count of s… <chr [3]>     
-#> 14 Middle School physica… YRMPIP    "Percent of Chic… % of stude… <chr [3]>     
-#> 15 High School physical … YRPA      "Number of Chica… count of s… <chr [0]>     
-#> 16 High School physical … YRPAP     "Percent of Chic… % of stude… <chr [0]>     
-#> 17 High School physical … YRPI      "Number of Chica… count of s… <chr [3]>     
-#> 18 High School physical … YRPIP     "Percent of Chic… % of stude… <chr [3]>     
-#> 19 High School soda cons… YRSO      "Number of Chica… count of s… <chr [1]>     
-#> 20 High School soda cons… YRSOP     "Percent of Chic… % of stude… <chr [1]>     
+#> 11 High School physical … YRPA      "Number of Chica… count of s… <chr [0]>     
+#> 12 High School physical … YRPAP     "Percent of Chic… % of stude… <chr [0]>     
+#> 13 High School physical … YRPI      "Number of Chica… count of s… <chr [3]>     
+#> 14 High School physical … YRPIP     "Percent of Chic… % of stude… <chr [3]>     
+#> 15 High School soda cons… YRSO      "Number of Chica… count of s… <chr [1]>     
+#> 16 High School soda cons… YRSOP     "Percent of Chic… % of stude… <chr [1]>     
+#> 17 Middle School physica… YRMPA     "Number of Chica… count of s… <chr [0]>     
+#> 18 Middle School physica… YRMPAP    "Percent of Chic… % of stude… <chr [0]>     
+#> 19 Middle School physica… YRMPI     "Number of Chica… count of s… <chr [3]>     
+#> 20 Middle School physica… YRMPIP    "Percent of Chic… % of stude… <chr [3]>     
 #> # ℹ 2 more variables: topic_datasets <list>, topic_subcategories <list>
 ```
 
@@ -255,16 +255,16 @@ combinations_of_data
 #> # A tibble: 616 × 7
 #>    geoid      topic_key population_key period_key layer_key  value standardError
 #>    <chr>      <chr>     <chr>          <chr>      <chr>      <dbl>         <dbl>
-#>  1 1714000-14 POP       ""             2017-2021  neighbor… 4.88e4            NA
-#>  2 1714000-18 POP       ""             2017-2021  neighbor… 1.38e4            NA
-#>  3 1714000-2  POP       ""             2017-2021  neighbor… 7.99e4            NA
-#>  4 1714000-43 POP       ""             2017-2021  neighbor… 5.27e4            NA
-#>  5 1714000-45 POP       ""             2017-2021  neighbor… 9.65e3            NA
-#>  6 1714000-47 POP       ""             2017-2021  neighbor… 2.64e3            NA
-#>  7 1714000-52 POP       ""             2017-2021  neighbor… 2.45e4            NA
-#>  8 1714000-6  POP       ""             2017-2021  neighbor… 1.03e5            NA
-#>  9 1714000-49 POP       ""             2017-2021  neighbor… 3.93e4            NA
-#> 10 1714000-24 POP       ""             2017-2021  neighbor… 8.69e4            NA
+#>  1 1714000-14 UMP       ""             2017-2021  neighborh…  6.67         1.46 
+#>  2 1714000-18 UMP       ""             2017-2021  neighborh…  5.36         2.10 
+#>  3 1714000-2  UMP       ""             2017-2021  neighborh…  6.66         1.11 
+#>  4 1714000-43 UMP       ""             2017-2021  neighborh… 17.0          1.95 
+#>  5 1714000-45 UMP       ""             2017-2021  neighborh… 13.5          5.24 
+#>  6 1714000-47 UMP       ""             2017-2021  neighborh… 21.5          8.32 
+#>  7 1714000-52 UMP       ""             2017-2021  neighborh…  8.02         1.69 
+#>  8 1714000-6  UMP       ""             2017-2021  neighborh…  3.86         0.580
+#>  9 1714000-49 UMP       ""             2017-2021  neighborh… 18.7          2.10 
+#> 10 1714000-24 UMP       ""             2017-2021  neighborh…  3.50         0.608
 #> # ℹ 606 more rows
 ```
 
@@ -349,13 +349,13 @@ layers
 #> # A tibble: 7 × 3
 #>   layer_name      layer_key    layer_url                                        
 #>   <chr>           <chr>        <chr>                                            
-#> 1 Community areas neighborhood https://metopio.blob.core.windows.net/lalage/sha…
-#> 2 ZIP Codes       zip          https://metopio.blob.core.windows.net/lalage/sha…
-#> 3 Census Tracts   tract-2020   https://metopio.blob.core.windows.net/lalage/sha…
-#> 4 Chicago         place        https://metopio.blob.core.windows.net/lalage/sha…
-#> 5 United States   us           https://metopio.blob.core.windows.net/lalage/sha…
-#> 6 States          state        https://metopio.blob.core.windows.net/lalage/sha…
-#> 7 Counties        county       https://metopio.blob.core.windows.net/lalage/sha…
+#> 1 Community areas neighborhood https://media.metop.io/shapes/ancestries/communi…
+#> 2 ZIP Codes       zip          https://media.metop.io/shapes/teams/chicago-heal…
+#> 3 Census Tracts   tract-2020   https://media.metop.io/shapes/teams/chicago-heal…
+#> 4 Chicago         place        https://media.metop.io/shapes/teams/chicago-heal…
+#> 5 United States   us           https://media.metop.io/shapes/us.topo.json       
+#> 6 States          state        https://media.metop.io/shapes/teams/chicago-heal…
+#> 7 Counties        county       https://media.metop.io/shapes/teams/chicago-heal…
 ```
 
 Since we just downloaded our data at the Community Area level, let’s
